@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
+  SafeAreaView, StatusBar, View,
 
 } from 'react-native';
 import TaskContextProvider from './screens/taskProvide';
@@ -12,30 +12,17 @@ function App() {
 
   return (
     <SafeAreaView >
+      <View>
+      <StatusBar backgroundColor="lightgreen" />
+      
+
       <TaskContextProvider>
         <TaskDetails />
       </TaskContextProvider>
+      </View>
     </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;

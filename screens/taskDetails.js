@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, View } from "react-native"
 import AddTaskComponent from "./addTask"
 import TaskListComponent from "./taskList"
 
@@ -16,7 +16,8 @@ const TaskDetails =()=>{
 
 const styles =StyleSheet.create({
     container:{
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        marginTop:10,
     }
 })
 

@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native"
 import { Action } from "./taskReducer"
+import { TaskContext } from "./taskProvide"
 
 const AddTaskComponent = () => {
 
@@ -27,10 +28,10 @@ const AddTaskComponent = () => {
                 onChangeText={text => setDescription(text)}
                 value={description}
                 placeholder="Enter New Task"
-                // borderWidth={1}
-                // boederRadius={8}
-                // height={50}
-                // width="70%"
+                borderWidth={1}
+                boederRadius={8}
+                height={50}
+                 width="70%"
                 padding={5}
                 backgroundColor='white'
 
